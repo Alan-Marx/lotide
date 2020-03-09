@@ -7,6 +7,9 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+// this function is designed to take values, and print that the assertion has passed if the
+// values are identical, or print that the assertion has failed if they are not. Works best with boolean values
+
 const eqArrays = function(firstArray, secondArray) {
   if (firstArray.length !== secondArray.length) {
     return false;
@@ -31,4 +34,6 @@ const assertArrayEqual = function(firstArray, secondArray) {
 assertArrayEqual(['Lighthouse Labs', 'Fast'], ['Bootcamp']);
 assertArrayEqual([1, 2, 3], [1, 2, 3]);
 assertArrayEqual(["1", "2", "3"], ["1", "2", 3]);
+
+
   

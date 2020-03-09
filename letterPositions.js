@@ -15,8 +15,10 @@ const nestedLetters = function(sentence) {
       }
     }
   }
+  console.log(emptyObj);
   return emptyObj;
 };
+nestedLetters('Hello');
 
 const letterPositions = function(sentence) {
   const indexObj = nestedLetters(sentence);
