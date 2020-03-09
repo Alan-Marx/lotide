@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@alan-marx/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "a utility library inspired by Lodash created for learning purposes",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -19,7 +19,9 @@
     "type": "git",
     "url": "git+https://github.com/Alan-Marx/lotide.git"
   },
-  "author": "",
+  "author": {
+    "name": "Alan Marx" 
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Alan-Marx/lotide/issues"
