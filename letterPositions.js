@@ -18,7 +18,6 @@ const nestedLetters = function(sentence) {
   console.log(emptyObj);
   return emptyObj;
 };
-nestedLetters('Hello');
 
 const letterPositions = function(sentence) {
   const indexObj = nestedLetters(sentence);
@@ -30,32 +29,34 @@ const letterPositions = function(sentence) {
   return indexObj;
 };
 
-const testString = "lighthouse in the house";
-console.log(letterPositions(testString)); 
-const testArray = letterPositions(testString);
+module.exports = letterPositions;
 
-const eqArrays = function(firstArray, secondArray) {
-  if (firstArray.length !== secondArray.length) {
-    return false;
-  } else {
-    for (let i = 0; i < firstArray.length; i++) {
-      if (firstArray[i] !== secondArray[i]) {
-        return false;
-      }
-    }
-    return true;
-  }
-};
+// const testString = "lighthouse in the house";
+// console.log(letterPositions(testString)); 
+// const testArray = letterPositions(testString);
 
-const assertArrayEqual = function(firstArray, secondArray) {
-  if (eqArrays(firstArray, secondArray)) {
-    console.log(`😇Assertion Passed: ${firstArray} === ${secondArray}`);
-  } else {
-    console.log(`😡Assertion Failed: ${JSON.stringify(firstArray)} !== ${JSON.stringify(secondArray)}`);
-  }
-};
+// const eqArrays = function(firstArray, secondArray) {
+//   if (firstArray.length !== secondArray.length) {
+//     return false;
+//   } else {
+//     for (let i = 0; i < firstArray.length; i++) {
+//       if (firstArray[i] !== secondArray[i]) {
+//         return false;
+//       }
+//     }
+//     return true;
+//   }
+// };
 
-assertArrayEqual(testArray['h'], [3, 5, 15, 18]);
-assertArrayEqual(testArray['i'], []);
+// const assertArrayEqual = function(firstArray, secondArray) {
+//   if (eqArrays(firstArray, secondArray)) {
+//     console.log(`😇Assertion Passed: ${firstArray} === ${secondArray}`);
+//   } else {
+//     console.log(`😡Assertion Failed: ${JSON.stringify(firstArray)} !== ${JSON.stringify(secondArray)}`);
+//   }
+// };
+
+// assertArrayEqual(testArray['h'], [3, 5, 15, 18]);
+// assertArrayEqual(testArray['i'], []);
   
   
